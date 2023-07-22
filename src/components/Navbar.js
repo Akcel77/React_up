@@ -29,7 +29,7 @@ const DropdownMenu = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  width: 25vw; // Augmenter la largeur
+  width: 100vw; // Augmenter la largeur
   height: 98vh;
   background: #1F1F1F;
   padding: 10px 20px;

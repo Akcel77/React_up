@@ -53,7 +53,7 @@ const Header = () => {
       <MenuButton onClick={() => setMenuOpen(true)}>
         <FiMenu size={30} color="#ffffff"/>
       </MenuButton>
-      {/* <Navbar isOpen={isMenuOpen} toggleMenu={() => setMenuOpen(!isMenuOpen)} /> */}
+      <Navbar isOpen={isMenuOpen} toggleMenu={() => setMenuOpen(!isMenuOpen)} />
       <Title>Diagne Axel</Title>
       <SubTitle>Candidature Développeur Web Front-end</SubTitle>
     </HeaderContainer>

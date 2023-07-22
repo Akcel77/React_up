@@ -1,13 +1,23 @@
 import React from 'react';
 import { styled  } from 'styled-components';
-
 import Header from './components/Header';
 import About from './components/About';
 import CompanyHighlight from './components/CompanyHighlight';
-// import Experience from './components/Experience';
-// import Skills from './components/Skills';
-// import Education from './components/Education';
-// import Contact from './components/Contact';
+import Experiences from './components/Experience';
+import Projet from './components/Project';
+import Footer from './components/Footer';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    }
+`;
+
+
 
 
 const StyledVerticalBar = styled.div`
@@ -16,8 +26,8 @@ const StyledVerticalBar = styled.div`
   top: 0;
   width: 2px;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.1);
-  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.05);
+  z-index: 1;
 `;
 
 
@@ -25,14 +35,15 @@ function App() {
   return (
     
     <div className="App">
+      <GlobalStyle/>
       <StyledVerticalBar />
       <Header />
       <CompanyHighlight/>
       <About/>
-           {/* <Experience />
-      <Skills />
-      <Education />
-      <Contact /> */}
+      <Experiences/>
+      <Projet/>
+      <Footer/>
+
     </div>
   );
 }

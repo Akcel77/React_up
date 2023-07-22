@@ -49,10 +49,12 @@ const Text = styled.p`
 const Title = styled.h3`
   text-align: center;
   margin: 10px 0;
+  font-size: 2rem;
 `;
 
 const Button = styled.button`
   padding: 10px 20px;
+  margin-top: 1rem;
   border: none;
   background-color: #ff0000;
   color: #fff;
@@ -92,7 +94,11 @@ const Button = styled.button`
                    <br/>J'ai une expérience avec MySql et PL/Sql en termes de bases de données, j'utilise Git pour le versionnage et VScode et IntelliJ comme environnements de développement.
                 </p>;
       case 'thinking':
-        return <p>Contenu pour le bouton de pensée...</p>;
+        return <p>Je suis animé par un désir d'évolution, d'améliorer mes compétences créatives et de développement.
+                  <br/> Mon objectif est d'apprivoiser React jusqu'à ce que son mystère se dissolve dans ma compréhension. 
+                  <br/>Certes, je suis un nouveau venu dans ce domaine et il y a une montagne de connaissances à gravir. Cependant, j'ai une soif d'apprendre inextinguible et je suis prêt à relever avec audace chaque défi sur ma route.
+                  <br/> <br/> Par ailleurs, j'aspire à perfectionner mes compétences de travail en équipe dans ce domaine, car je crois que la collaboration est le moteur de l'innovation.
+                </p>;
       default:
         return <p>Contenu par défaut...</p>;
     }
@@ -121,7 +127,9 @@ const Button = styled.button`
         </IconWrapper>
       </IconsWrapper>
       <Title>Ce que je pense de l'état actuel du web</Title>
-      <Text style={{ width: '80%', margin: '0 auto'}}>J'ai toujours été attiré par internet et son évolution. Je suis aussi de très près les entreprises qui 'dictent' le fonctionnement de celui-ci et sa gestion. Je pense que plus qu'avant nous traversons une évolution inquantifiable sur les changements à venir et si nous allons passer d'un web 2.0 à un web3.0</Text>
+      <Text style={{ width: '80%', margin: '0 auto'}}>Évoluant avec internet depuis mon plus jeune âge, j'ai toujours été fasciné par sa progression constante et l'ingéniosité des entreprises qui façonnent le paysage numérique actuel. L'essor spectaculaire que nous vivons aujourd'hui, avec des innovations incessantes et des changements dynamiques, marque, je le crois, l'aube d'une transition vers le web 3.0, qui se matérialisera progressivement en fonction des utilisateurs et de leurs interactions.
+
+Nous sommes actuellement à l'apogée de l'ère numérique, où les sites web et les applications offrent des expériences incroyables et des possibilités sans limites. Au lieu d'être simplement un spectateur de cette révolution, je souhaite activement y participer et contribuer à façonner le futur d'internet.</Text>
       <Modal isOpen={modalIsOpen} handleClose={handleCloseModal}>
         <h2>Plus en profondeur</h2>
         {modalContent()}
